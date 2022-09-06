@@ -1,0 +1,8 @@
+# my custom aliases for easy using :)
+alias ara='apt search'
+alias kur='sudo apt install'
+alias yenile='sudo apt update'
+alias guncelle='sudo apt upgrade'
+alias upgradeable='nala list --upgradeable'
+alias gitremoteadd='bash ~/Documents/gitremoteadd'
+alias ytdlp='bash ~/Documents/automated-ytdlp-script/script.sh'

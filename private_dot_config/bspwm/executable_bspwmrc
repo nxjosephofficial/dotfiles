@@ -72,7 +72,7 @@ bspc rule -a thunderbird-default desktop='^6' follow=on
 bspc rule -a Shotwell desktop='^9' follow=on
 bspc rule -a kitty desktop='^5' follow=on
 bspc rule -a Atom desktop='^4' follow=on
-bspc rule -a thunar desktop='^2' follow=on
+bspc rule -a Thunar desktop='^2' follow=on
 
 #Auto-Start
 # bspc desktop -f ^9

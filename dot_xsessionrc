@@ -1,0 +1,1 @@
+setxkbmap -layout us,tr -option grp:caps_toggle

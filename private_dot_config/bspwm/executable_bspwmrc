@@ -94,7 +94,7 @@ done
 #   discordpid=$(pidof Discord)
 #done
 sleep 2.5
-bspc desktop -f ^1
+# bspc desktop -f ^1
 # bash ~/Git
 
 # Extra Specific Files for Titus (DELETE ME)

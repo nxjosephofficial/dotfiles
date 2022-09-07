@@ -5,7 +5,10 @@
 
 #Start polybar first
 bash ~/.config/polybar/launch.sh &
+# background wallpaper
 feh --bg-fill ~/Pictures/background.jpg &
+# redlight
+redshift &
 
 # Variable Defines
 color0=#3B4252

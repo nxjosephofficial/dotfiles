@@ -97,7 +97,7 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-export PATH="$HOME/.local/bin/:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases

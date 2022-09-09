@@ -8,7 +8,8 @@ bash ~/.config/polybar/launch.sh &
 # background wallpaper
 feh --bg-fill ~/Pictures/background.jpg &
 # redshift
-redshift &
+# redshift &
+bash ~/.config/redshift/launch.sh &
 
 # Variable Defines
 color0=#3B4252
@@ -73,6 +74,7 @@ bspc rule -a Shotwell desktop='^9' follow=on
 bspc rule -a kitty desktop='^5' follow=on
 bspc rule -a Atom desktop='^4' follow=on
 bspc rule -a Thunar desktop='^2' follow=on
+bspc rule -a Steam desktop='^10'
 
 #Auto-Start
 # bspc desktop -f ^9

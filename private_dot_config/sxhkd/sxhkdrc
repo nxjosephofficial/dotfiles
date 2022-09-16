@@ -19,7 +19,7 @@ super + x
 	firefox
 
 super + p
-	flameshot full -p ~/Pictures/Screenshoots/
+	flameshot full -p ~/Pictures/Screenshots/
 
 super + shift + p
 	flameshot gui -p ~/Pictures/Screenshoots/

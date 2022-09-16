@@ -125,3 +125,5 @@ sudo() {
     command sudo "$@"
   fi
 }
+
+eval "$(starship init bash)"

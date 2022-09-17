@@ -10,6 +10,8 @@ feh --bg-fill ~/Pictures/background.jpg &
 # redshift
 # redshift &
 bash ~/.config/redshift/launch.sh &
+# set keyboard layout
+DISPLAY=:0 setxkbmap -layout us,tr -option grp:caps_toggle
 
 # Variable Defines
 color0=#3B4252
@@ -27,9 +29,6 @@ done &
 
 #Fix Mouse curoor on startup 
 xsetroot -cursor_name left_ptr
-
-#Set Keyboard Layout
-setxkbmap -layout us
 
 #Monitor Config
 bspc monitor -d 1 2 3 4 5 6 7 8 9 10

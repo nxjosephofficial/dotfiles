@@ -13,3 +13,5 @@ alias openvpn='sudo openvpn --auth-nocache --config /mnt/.vpn/config.ovpn'
 alias python='python3'
 alias rss='newsboat -r'
 alias addrss='bash ~/Documents/addrss4chezmoi'
+# Kitty clear scrollback buffer
+alias clear="printf '\E[H\E[3J'"

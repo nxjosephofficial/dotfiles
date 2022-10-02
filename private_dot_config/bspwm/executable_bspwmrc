@@ -8,10 +8,9 @@ bash ~/.config/polybar/launch.sh &
 # background wallpaper
 feh --bg-fill ~/Pictures/background.jpg &
 # redshift
-# redshift &
 bash ~/.config/redshift/launch.sh &
 # set keyboard layout
-DISPLAY=:0 setxkbmap -layout us,tr -option grp:caps_toggle
+DISPLAY=:0 setxkbmap -layout us,tr -option grp:shift_caps_toggle
 
 # Variable Defines
 color0=#3B4252
@@ -31,7 +30,8 @@ done &
 xsetroot -cursor_name left_ptr
 
 #Monitor Config
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+#bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor -d 1 2 3 4 5 6 7 8 9
 
 #BSPWM Config
 bspc config border_width        0
@@ -62,18 +62,16 @@ bspc config external_rules_command "$HOME/.config/bspwm/external_rules.sh"
 bspc rule -a Firefox-esr desktop='^1' follow=on
 bspc rule -a Gimp-2.10 desktop='^8' follow=on
 bspc rule -a Rhythmbox desktop='^7' follow=on
-# bspc rule -a variety state=floating
-bspc rule -a libreoffice-startcenter desktop='^3' follow=on
-# bspc rule -a mplayer2 state=floating
-# bspc rule -a Kupfer.py focus=on
-# bspc rule -a Screenkey manage=off
+
+# bspc rule -a libreoffice-startcenter desktop='^3' follow=on
+
 bspc rule -a thunderbird-default desktop='^6' follow=on
-# bspc rule -a synergy desktop='^9'
 bspc rule -a Shotwell desktop='^9' follow=on
 bspc rule -a kitty desktop='^5' follow=on
 bspc rule -a Atom desktop='^4' follow=on
 bspc rule -a Thunar desktop='^2' follow=on
-bspc rule -a Steam desktop='^10'
+
+# bspc rule -a Steam desktop='^10'
 
 #Auto-Start
 # bspc desktop -f ^9

@@ -30,11 +30,14 @@ lock=""
 suspend=""
 logout=""
 
+<<<<<<< HEAD
 # Message
 msg() {
 	rofi -theme "$dir/message.rasi" -e "Available Options  -  yes / y / no / n"
 }
 
+=======
+>>>>>>> 15df572795c175ef5445419c103864c048f8c458
 # Variable passed to rofi
 options="$shutdown\n$reboot\n$lock\n$suspend\n$logout"
 
@@ -59,6 +62,7 @@ case $chosen in
 			systemctl suspend
         ;;
     $logout)
+<<<<<<< HEAD
 			if [[ "$DESKTOP_SESSION" == "Openbox" ]]; then
 				openbox --exit
 			elif [[ "$DESKTOP_SESSION" == "bspwm" ]]; then
@@ -66,5 +70,9 @@ case $chosen in
 			elif [[ "$DESKTOP_SESSION" == "i3" ]]; then
 				i3-msg exit
 			fi
+=======
+			bspc quit
+        fi
+>>>>>>> 15df572795c175ef5445419c103864c048f8c458
         ;;
 esac

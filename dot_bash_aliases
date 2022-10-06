@@ -17,3 +17,4 @@ alias addrss='bash ~/Documents/addrss4chezmoi'
 alias clear="printf '\E[H\E[3J'"
 alias snano='sudo nano'
 alias dietpi='TERM=xterm ssh root@dietpi'
+alias arp-scan='sudo arp-scan --localnet'

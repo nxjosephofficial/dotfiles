@@ -6,7 +6,7 @@
 #Start polybar first
 bash ~/.config/polybar/launch.sh &
 # background wallpaper
-feh --bg-fill ~/Pictures/background.jpg &
+feh --bg-fill ~/Pictures/xanmod_wallpaper.png &
 # redshift
 bash ~/.config/redshift/launch.sh &
 # set keyboard layout

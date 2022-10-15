@@ -131,3 +131,7 @@ sudo() {
 export GEM_HOME="$HOME/.gems"
 export PATH="$HOME/.gems/bin:$PATH"
 eval "$(starship init bash)"
+
+# local binaries
+export PATH="$HOME/.local/bin:$PATH"
+

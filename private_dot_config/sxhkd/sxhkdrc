@@ -15,8 +15,11 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # My program Hotkeys
-super + x
+super + shift + x
 	firefox
+
+super + x
+	brave-browser
 
 super + p
 	flameshot full -p ~/Pictures/Screenshots/

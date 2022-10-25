@@ -1,0 +1,4 @@
+export ENV="$HOME"/.kshrc
+export LC_CTYPE="en_US.UTF-8"
+sndioctl output.level=0.1
+i3

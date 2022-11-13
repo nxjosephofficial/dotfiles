@@ -135,3 +135,5 @@ eval "$(starship init bash)"
 # local binaries
 export PATH="$HOME/.local/bin:$PATH"
 
+# cargo
+. "$HOME/.cargo/env"

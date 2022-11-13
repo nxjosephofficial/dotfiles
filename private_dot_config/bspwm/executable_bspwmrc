@@ -6,7 +6,7 @@
 #Start polybar first
 bash ~/.config/polybar/launch.sh &
 # background wallpaper
-feh --bg-fill ~/Pictures/xanmod_wallpaper.png &
+feh --bg-fill ~/Pictures/background.jpg &
 # redshift
 bash ~/.config/redshift/launch.sh &
 # set keyboard layout
@@ -69,6 +69,7 @@ bspc rule -a vlc desktop='^9' follow=on
 bspc rule -a mpv desktop='^9' follow=on
 bspc rule -a kitty desktop='^5' follow=on
 bspc rule -a Atom desktop='^4' follow=on
+bspc rule -a VSCodium desktop='^4' follow=on
 bspc rule -a Thunar desktop='^2' follow=on
 bspc rule -a Steam desktop='^10'
 

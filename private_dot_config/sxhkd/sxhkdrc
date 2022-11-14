@@ -18,8 +18,11 @@ super + Escape
 super + shift + x
 	firefox
 
-super + x
+super + alt + x
 	brave-browser
+
+super + x
+	~/.local/appimages/chromium
 
 super + p
 	flameshot full -p ~/Pictures/Screenshots/

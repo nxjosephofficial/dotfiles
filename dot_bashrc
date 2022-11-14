@@ -133,7 +133,7 @@ export PATH="$HOME/.gems/bin:$PATH"
 eval "$(starship init bash)"
 
 # local binaries
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.local/appimages:$PATH"
 
 # cargo
 . "$HOME/.cargo/env"

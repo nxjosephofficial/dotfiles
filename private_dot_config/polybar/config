@@ -78,7 +78,7 @@ font-5 = Font Awesome 5 Free Solid:size=18;4
 
 modules-left = launcher sep left bspwm right sep left bsplayout bspmode right
 modules-center = xwindow
-modules-right = left pulseaudio right sep left dunst right sep left time right sep powermenu
+modules-right = left xkeyboard right sep left pulseaudio right sep left dunst right sep left time right sep powermenu
 
 override-redirect = true
 wm-restack = bspwm
@@ -320,6 +320,19 @@ hook-0 = echo "%{A1:dunstctl set-paused true && polybar-msg hook dunst 2:}  %
 hook-1 = echo "%{A1:dunstctl set-paused false && polybar-msg hook dunst 1:}  %{A}" &
 
 click-middle = rofi_notif_center.sh &
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format-prefix = " "
+format-layout = %layout%
+format-foreground = ${colors.shade3}
+format-background = ${colors.shade16}
+format-overline = ${colors.background}
+format-underline = ${colors.background}
 
 [module/pulseaudio]
 type = internal/pulseaudio

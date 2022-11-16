@@ -60,7 +60,7 @@ bspc config external_rules_command "$HOME/.config/bspwm/external_rules.sh"
 # Search "Bare-bones window manger by Angad Sharma" on dev.to for more
 bspc rule -a Firefox-esr desktop='^1' follow=on
 bspc rule -a Brave-browser desktop='^1' follow=on
-bspc rule -a Chromium desktop='^1' follow=on
+bspc rule -a Chromium-browser desktop='^1' follow=on
 bspc rule -a Gimp-2.10 desktop='^8' follow=on
 bspc rule -a Rhythmbox desktop='^7' follow=on
 bspc rule -a libreoffice-startcenter desktop='^3' follow=on

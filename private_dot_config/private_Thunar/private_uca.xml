@@ -4,7 +4,7 @@
 	<icon>utilities-terminal</icon>
 	<name>Open Terminal Here</name>
 	<unique-id>1662553511584606-1</unique-id>
-	<command>kitty --working-directory %f</command>
+	<command>kitty --directory %f</command>
 	<description>Example for a custom action</description>
 	<patterns>*</patterns>
 	<startup-notify/>

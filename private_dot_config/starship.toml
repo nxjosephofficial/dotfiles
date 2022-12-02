@@ -21,7 +21,6 @@ $ruby\
 [](fg:#86BBD8 bg:#06969A)\
 $docker_context\
 [](fg:#06969A bg:#33658A)\
-$time\
 [ ](fg:#33658A)\
 """
 command_timeout = 5000
@@ -123,8 +122,3 @@ symbol = " "
 style = "bg:#86BBD8"
 format = '[ $symbol ($version) ]($style)'
 
-[time]
-disabled = false
-time_format = "%I:%M %p" # Hour:Minute 12h Format
-style = "bg:#33658A"
-format = '[ $time ]($style)'

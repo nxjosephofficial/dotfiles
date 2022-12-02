@@ -4,7 +4,7 @@
 gtk-theme-name="Nordic"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="Sans 10"
-egtk-cursor-theme-name="Nordzy-cursors"
+egtk-cursor-theme-name="Bibata-Modern-Ice"
 gtk-cursor-theme-size=0
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
 gtk-toolbar-icon-size=GTK_ICON_SIZE_LARGE_TOOLBAR

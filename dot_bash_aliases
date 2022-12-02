@@ -3,25 +3,11 @@ alias ara='apt search'
 alias kur='sudo apt install'
 alias yenile='sudo apt update'
 alias guncelle='sudo apt upgrade'
-alias upgradeable='nala list --upgradeable'
-alias purge='sudo nala remove --purge'
-alias remove='sudo nala remove'
-alias gitremoteadd='bash ~/Documents/gitremoteadd.sh'
-alias ytdlp='bash ~/Documents/automated-ytdlp-script/script.sh'
-alias libreddit='LIBREDDIT_DEFAULT_SHOW_NSFW=on libreddit'
-alias openvpn='sudo openvpn --auth-nocache --config /mnt/WDC/.vpn/config.ovpn'
-alias python='python3'
-alias rss='newsboat -r'
-alias addrss='bash ~/Documents/addrss4chezmoi'
+alias upgradeable='apt list --upgradeable'
+alias purge='sudo apt remove --purge'
+alias remove='sudo apt remove'
 # Kitty clear scrollback buffer
 alias clear="printf '\E[H\E[3J'"
 alias snano='sudo nano'
 alias dietpi='TERM=xterm ssh root@dietpi'
 alias arp-scan='sudo arp-scan --localnet'
-# do not play "league of scripts", its full of scripts!
-# alias leagueofscripts="sudo sh -c 'sysctl -w abi.vsyscall32=0' && sudo sysctl -w abi.vsyscall32=0"
-# Nix package manager aliases
-alias nixlist='nix-env -q'
-alias nixinstall='nix-env -iA'
-alias nixerase='nix-env -e'
-alias nixupdate='nix-env -u'

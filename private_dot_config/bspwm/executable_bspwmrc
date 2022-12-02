@@ -6,11 +6,13 @@
 #Start polybar first
 bash ~/.config/polybar/launch.sh &
 # background wallpaper
-feh --bg-fill ~/Pictures/background.jpg &
+feh --bg-fill ~/Pictures/bg.png &
 # redshift
 bash ~/.config/redshift/launch.sh &
 # set keyboard layout
 DISPLAY=:0 setxkbmap -layout us,tr -option grp:shift_caps_toggle
+# Start pulseeffects
+pulseeffects --gapplication-service &
 
 # Variable Defines
 color0=#3B4252

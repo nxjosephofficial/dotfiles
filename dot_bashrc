@@ -97,8 +97,6 @@ fi
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-export PATH="$HOME/.local/bin:$PATH"
-
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
@@ -114,27 +112,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-apt() { 
-  command nala "$@"
-}
-sudo() {
-  if [ "$1" = "apt" ]; then
-    shift
-    command sudo nala "$@"
-  else
-    command sudo "$@"
-  fi
-}
-
 # Install Ruby Gems to ~/.gems
 export GEM_HOME="$HOME/.gems"
-export PATH="$HOME/.gems/bin:$PATH"
-
-# Starship
-eval "$(starship init bash)"
-
 # local binaries
-export PATH="$HOME/.local/bin:$HOME/.local/appimages:$PATH"
-
-# cargo
-. "$HOME/.cargo/env"
+export PATH="$HOME/.local/bin:$HOME/.local/appimages:$HOME/.gems/bin:$PATH"
+# Starship Prompt
+eval "$(starship init bash)"

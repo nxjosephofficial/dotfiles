@@ -15,21 +15,18 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # My program Hotkeys
-super + shift + x
-	firefox
-
-super + alt + x
-	brave-browser
 
 super + x
-	~/.local/appimages/chromium
+	~/.local/bin/chromium
 
 super + p
-	flameshot full -p ~/Pictures/Screenshots/
+	flameshot full -p ~/Pictures/
 
 super + shift + p
-	flameshot gui -p ~/Pictures/Screenshoots/
+	flameshot gui -p ~/Pictures/
 
+super + k
+	keepassxc
 #
 # bspwm hotkeys
 #
@@ -55,7 +52,7 @@ super + g
 	bspc node -s biggest.window
 
 super + e
-	thunar
+	nautilus
 #
 # state/flags
 #

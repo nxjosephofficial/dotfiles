@@ -76,9 +76,9 @@ font-3 = Font Awesome 5 Brands:size=15;4
 font-4 = Font Awesome 5 Free Solid:size=15;4
 font-5 = Font Awesome 5 Free Solid:size=18;4
 
-modules-left = launcher sep left bspwm right sep left bsplayout bspmode right
+modules-left = sep left bspwm right sep left bsplayout bspmode right
 modules-center = xwindow
-modules-right = left xkeyboard right sep left pulseaudio right sep left dunst right sep left time right sep powermenu
+modules-right = left xkeyboard right sep left pulseaudio right sep left dunst right sep left time right sep
 
 override-redirect = true
 wm-restack = bspwm
@@ -274,14 +274,6 @@ label-private = 
 label-private-padding-left = 1
 label-marked = 
 label-marked-padding-left = 1
-
-[module/launcher]
-type = custom/text
-content-background = ${colors.background}
-content-foreground = ${colors.shade17}
-content-padding = 1
-click-left = "rofi -show drun"
-content = ""
 
 [module/xwindow]
 type = internal/xwindow
@@ -624,13 +616,5 @@ format-underline = ${colors.background}
 ;label = %{A1:notify-send -a Date -i /usr/share/icons/Nord-Icon/64x64/apps/office-calendar.svg -u normal -t 3000 "$(date "+%A, %B %d %Y")":}%time%%{A}
 label = %{A1:~/.config/polybar/polybar-scripts/cal-popup.sh --popup &:}%time%%{A}
 ;click-left = "~/.config/polybar/polybar-scripts/cal-popup.sh --popup &"
-
-[module/powermenu]
-type = custom/text
-content-background = ${colors.background}
-content-foreground = ${colors.shade17}
-content-padding = 1
-click-left = "$HOME/.config/rofi/powermenu/powermenu.sh"
-content = "⏻"
 
 ; vim:ft=dosini
